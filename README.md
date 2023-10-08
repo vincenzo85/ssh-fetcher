@@ -1,2 +1,2 @@
 # ssh-fetcher
-Simple cli command to compare plugins versions beetween production and staging
+Simple WP-CLI command to compare plugins versions beetween production and staging

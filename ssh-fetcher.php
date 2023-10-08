@@ -74,26 +74,6 @@ if (defined('WP_CLI') && WP_CLI) {
 
         }
 
-        public function test2() {
-            $user_name = WP_CLI::prompt('Please enter username: ');
-            WP_CLI::line($user_name);        
-        }
-
-        public function test4(){
-            $line = 'test';
-            WP_CLI::line($line); 
-            $this -> test3();
-        }
-        public function test3(){
-            $line = 'test';
-            WP_CLI::line($line); 
-            ob_flush();  // Flush the output buffer
-
-            $fin = fopen ("php://stdin","r");
-            $line = fgets($fin);
-
-            WP_CLI::line($line);        
-        }
 
          /**
          * Save remote plugin list in options
